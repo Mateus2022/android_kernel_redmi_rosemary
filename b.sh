@@ -10,7 +10,7 @@ export KBUILD_BUILD_USER="fjrXTR"
 git clone --depth=1 https://github.com/kdrag0n/proton-clang "${HOME}/clang-proton"
 
 rm -rf AnyKernel
-make O=out ARCH=arm64 gki_defconfig
+make O=out ARCH=arm64 rosemary_defconfig
 
 PATH="${HOME}/clang-proton/bin:${PATH}" \
 make -j20 O=out \
